@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(63, 60, 60);
+    color: white;
+}
+/* div{
+    border: 2px solid red;
+} */
+#table{
+    height: 50vh;
+    background-color: rgb(31, 31, 163);
+}
+#game-board{
+    display: none;
+}
+#row1, #row2, #row3{
+    height: 125px;
+    width: 500px;
+}
+#row1, #row2{
+    border-bottom: 2px solid green;
+}
+#a1, #b1, #c1{
+    border-right: 2px solid green;
+}
+#a3, #b3, #c3{
+    border-left: 2px solid green;
+}
+#o, #p1{
+    text-align: right;
+}
+#x, #p2{
+    text-align: left;
+}
+#form{
+     display: flex;
+}
+.gameSpace{
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background: none; */
+}
+#currentTurnH{
+    display: none;
+    text-align: center;
+}

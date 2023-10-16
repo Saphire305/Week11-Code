@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container d-flex justify-content-center rounded w-50">
+        <h1>Tic-Tac-Toe</h1>
+    </div>
+    
+    <div class="container d-flex justify-content-center my-4 w-50" id="table">
+        <div class="container m-auto" id="game-board">
+            <div class="container row m-auto" id="row1">
+                <div class="container col-sm gameSpace" id="a1"></div>
+                <div class="container col-sm gameSpace" id="a2"></div>
+                <div class="container col-sm gameSpace" id="a3"></div>
+            </div>
+            <div class="container row m-auto" id="row2">
+                <div class="container col-sm gameSpace" id="b1"></div>
+                <div class="container col-sm gameSpace" id="b2"></div>
+                <div class="container col-sm gameSpace" id="b3"></div>
+            </div>
+            <div class="container row m-auto" id="row3">
+                <div class="container col-sm gameSpace" id="c1"></div>
+                <div class="container col-sm gameSpace" id="c2"></div>
+                <div class="container col-sm gameSpace" id="c3"></div>
+            </div>
+        </div>
+
+        <div class="container justify-content-center my-4 w-50" id="form">
+            <div class="container row my-auto">
+                <input class="my-1" type="text" placeholder="Player 1" id="player1">
+                <input type="text" placeholder="Player 2" id="player2">
+                <button class="my-2" id="button">Start</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4 w-50">
+        <div class="container row">
+            <div class="container col-sm">
+                <h2 id="x">X</h2>
+            </div>
+            <div class="container col-sm">
+                <h2 id="p1">Player 1</h2>
+            </div>
+            <div class="container col-sm">
+                <h2 id="p2">Player 2</h2>
+            </div>
+            <div class="container col-sm">
+                <h2 id="o">O</h2>
+            </div>
+        </div>
+        <div class="container row justify-content-center mx-auto" id="currentTurnH">
+            <h2 class="mx-auto">It is <span id="currentTurn"></span>'s turn</h2>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
